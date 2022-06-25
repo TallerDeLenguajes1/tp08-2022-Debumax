@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.IO;
 
-
 Console.WriteLine("haciendo la wea esta ");
 
 
@@ -39,8 +38,9 @@ using (StreamWriter sw = new StreamWriter(archivo) )
 {
     foreach (var elemento in listaDeContenido )
     {
-        sw.WriteLine($"{i} - {Path.GetFileNameWithoutExtension(archivo)} - {Path.GetExtension(archivo)}");
+        sw.WriteLine($"{i};{Path.GetFileNameWithoutExtension(archivo)};{Path.GetExtension(archivo)}");
         i++;
     }
+    //tiene que ser con ";" para que este bien construido el archivo csv 
 }
 
