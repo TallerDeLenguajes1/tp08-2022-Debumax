@@ -1,6 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.IO;
 
+List<string> cargandoLista(){
+    
+}
+
 Console.WriteLine("haciendo la wea esta ");
 
 
@@ -14,7 +18,7 @@ foreach (string archivos in listaDeContenido)
     Console.WriteLine(archivos);
 }
 
-string archivo = rutaCarpeta+@"\index.txt";
+string archivo = rutaCarpeta+@"\index.csv";
 if (!File.Exists(archivo))
 {
     File.Create(archivo);
@@ -42,3 +46,4 @@ using (StreamWriter sw = new StreamWriter(archivo) )
         i++;
     }
 }
+
