@@ -1,9 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.IO;
 
-List<string> cargandoLista(){
-    
-}
 
 Console.WriteLine("haciendo la wea esta ");
 
