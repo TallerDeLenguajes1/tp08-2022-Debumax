@@ -17,3 +17,7 @@ if (!File.Exists(archivo))
 {
     File.Create(archivo);
 }
+Console.WriteLine("leyendo el archivo");
+
+string texto=File.ReadAllText(archivo);
+Console.WriteLine($"lo que contiene el archivo {0} ",texto);
