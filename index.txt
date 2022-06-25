@@ -1,5 +1,5 @@
-..\tp08-2022-Debumax\gitignore
-..\tp08-2022-Debumax\index.csv
-..\tp08-2022-Debumax\index.txt
-..\tp08-2022-Debumax\Program.cs
-..\tp08-2022-Debumax\tp08-2022-Debumax.csproj
+1 - index - .txt
+2 - index - .txt
+3 - index - .txt
+4 - index - .txt
+5 - index - .txt

@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.IO;
+
 Console.WriteLine("haciendo la wea esta ");
 
 
@@ -27,3 +29,16 @@ Console.WriteLine($"lo que contiene el archivo {texto} ");
 Console.WriteLine("escribiendo el archivo");
 File.WriteAllLines(archivo,listaDeContenido);
 Console.WriteLine("fin de escritura");
+
+Console.WriteLine("escribiendo como me piden");
+int i=1;
+
+//usando esta cosa para escribir en el archivo de forma mas bonita 
+using (StreamWriter sw = new StreamWriter(archivo) )
+{
+    foreach (var elemento in listaDeContenido )
+    {
+        sw.WriteLine($"{i} - {Path.GetFileNameWithoutExtension(archivo)} - {Path.GetExtension(archivo)}");
+        i++;
+    }
+}
