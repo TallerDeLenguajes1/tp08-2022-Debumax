@@ -12,7 +12,7 @@ foreach (string archivos in listaDeContenido)
     Console.WriteLine(archivos);
 }
 
-string archivo = rutaCarpeta+@"\index.csv";
+string archivo = rutaCarpeta+@"\index.txt";
 if (!File.Exists(archivo))
 {
     File.Create(archivo);
@@ -20,4 +20,10 @@ if (!File.Exists(archivo))
 Console.WriteLine("leyendo el archivo");
 
 string texto=File.ReadAllText(archivo);
-Console.WriteLine($"lo que contiene el archivo {0} ",texto);
+Console.WriteLine($"lo que contiene el archivo {texto} ");
+
+
+
+Console.WriteLine("escribiendo el archivo");
+File.WriteAllLines(archivo,listaDeContenido);
+Console.WriteLine("fin de escritura");
